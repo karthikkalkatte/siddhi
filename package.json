@@ -1,0 +1,16 @@
+{
+  "name": "siddhi-enterprise",
+  "version": "1.0.0",
+  "description": "SiddhiEnterprise - Laptop Sales, Service, and Spare Parts",
+  "main": "index.html",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -43,9 +43,13 @@ section h2::after {content:'';width:60px;height:4px;background:#3b82f6;display:b
 }
 .contact-form input:focus, .contact-form textarea:focus {border-color:#3b82f6;}
 .contact-form button {
-  background:#3b82f6;color:#fff;padding:15px 30px;font-weight:600;border:none;border-radius:30px;cursor:pointer;transition:0.3s;
+  background:#3b82f6;color:#fff;padding:15px 30px;font-weight:600;border:none;border-radius:30px;cursor:pointer;transition:0.3s;width:100%;
 }
 .contact-form button:hover {background:#4f46e5;}
+
+#formMessage {
+  margin-top:15px;padding:12px;border-radius:8px;text-align:center;font-weight:600;min-height:20px;
+}
 
 /* Footer */
 footer {background:#1f2937;color:white;padding:40px 20px;text-align:center;}
