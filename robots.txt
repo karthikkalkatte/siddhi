@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siddhienterprise.netlify.app/sitemap.xml
+
+# Block specific files from being indexed
+Disallow: /admin/
+Disallow: /.env
