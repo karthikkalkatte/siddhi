@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddhi Services</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SiddhiEnterprise</title>
+<meta name="description" content="SiddhiEnterprise - Laptop Sales, Service, and Spare Parts. Modern tech solutions for all your needs.">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Siddhi Services</h1>
-    <p>Laptop Sales • Services • Spare Parts</p>
+<!-- Header / Hero -->
+<header data-aos="fade-down">
+  <h1>SiddhiEnterprise</h1>
+  <p>Laptop Sales • Services • Spare Parts</p>
+  <a href="#services" class="btn-primary">Explore Services</a>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#sales">Sales</a>
-    <a href="#services">Services</a>
-    <a href="#spares">Spare Parts</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="home">
-    <h2>Welcome to Siddhi</h2>
-    <p>
-        Siddhi provides reliable laptop sales, professional repair services,
-        and genuine spare parts for all major brands.
-        We focus on quality service and customer satisfaction.
-    </p>
-</section>
-
-<section id="sales">
-    <h2>Laptop Sales</h2>
-    <ul>
-        <li>New Laptops</li>
-        <li>Refurbished Laptops</li>
-        <li>Dell, HP, Lenovo, Asus, Acer</li>
-        <li>Business & Personal Use</li>
-    </ul>
-</section>
-
+<!-- Services Section -->
 <section id="services">
-    <h2>Laptop Services</h2>
-    <ul>
-        <li>Hardware Repair</li>
-        <li>Software Installation</li>
-        <li>Windows & Linux OS</li>
-        <li>Virus Removal</li>
-        <li>SSD / RAM Upgrade</li>
-        <li>On-site Support</li>
-    </ul>
+  <div class="container">
+    <h2 data-aos="fade-up">Our Services</h2>
+    <div class="cards">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-laptop"></i>
+        <h3>Laptop Sales</h3>
+        <p>We offer branded laptops with warranty and support. Get your perfect laptop today!</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-tools"></i>
+        <h3>Repair & Service</h3>
+        <p>All laptop repairs, upgrades, and maintenance services at competitive prices.</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-cogs"></i>
+        <h3>Spare Parts</h3>
+        <p>Genuine spare parts for all major laptop brands to keep your devices running smoothly.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="spares">
-    <h2>Spare Parts</h2>
-    <ul>
-        <li>Batteries</li>
-        <li>Chargers & Adapters</li>
-        <li>Screens / Displays</li>
-        <li>Keyboards</li>
-        <li>SSD / HDD / RAM</li>
-        <li>Cooling Fans</li>
-    </ul>
-</section>
-
+<!-- Contact Section -->
 <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91-8073558218</p>
-    <p><strong>Email:</strong> info@siddhiservices.com</p>
-    <p><strong>Location:</strong> Banglore, India</p>
-
-    <a class="btn" href="tel:+919483676367">Call Now</a>
-    <a class="btn" href="https://wa.me/919483676367" target="_blank">WhatsApp</a>
+  <div class="container">
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <form class="contact-form" name="contact" method="POST" data-netlify="true" data-aos="fade-up" data-aos-delay="100">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
+<!-- Footer -->
 <footer>
-    <p>© 2026 Siddhi Services. All Rights Reserved.</p>
+  <p>© 2026 SiddhiEnterprise. All Rights Reserved.</p>
 </footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9483676367" target="_blank" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- AOS Animation Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration:1000,
+    once:true
+  });
+</script>
 
 </body>
 </html>
