@@ -1,0 +1,4 @@
+[submodule "siddhi"]
+    path = siddhi
+    url = https://github.com/username/siddhi.git
+
