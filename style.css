@@ -200,7 +200,7 @@ header {
 
 /* ===== SECTION BASE ===== */
 section {
-  padding: 140px 0;
+  padding: 50px 0;
 }
 
 .section-title {
@@ -262,14 +262,81 @@ section {
 
 .about-box:nth-child(2) h3 {
   font-size: 1.9rem; /* slightly bigger header */
-  margin-bottom: 24px;
 }
 
 .about-box:nth-child(2) p {
-  font-size: 1.15rem;
+  font-size: 1rem;
   line-height: 1.8; /* more vertical spacing */
 }
 
+/* About Card Styles */
+.about-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-card p {
+ font-size: 1rem;
+}
+
+.about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.about-card-icon {
+  font-size: 2rem;
+  color: #1a73e8;
+  display: flex;
+  align-items: center;
+}
+.about-card-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin: 0;
+  color: #1175bd;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.about-card-desc {
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+.about-card-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #444;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+.about-card-list li {
+  list-style: none;
+  padding-left: 26px;
+  margin-bottom: 18px;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+.about-card-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+.about-card-note {
+  margin: 0;
+  color: #555;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+}
 
 /* ===== SERVICES - FIXED FLIP EFFECT ===== */
 .services-grid {
@@ -552,9 +619,6 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px rgba(52,211,153,0.3);
 }
-
-
-
 
 /* ===== FOOTER ===== */
 footer {
