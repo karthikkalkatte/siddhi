@@ -1,103 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Laptop Service & Sales in Bangalore | U&I Technologies - Repair & Spare Parts</title>
-<meta name="description" content="Best laptop service, repair, and sales in Bangalore. Dell, HP, ASUS, Lenovo authorized service center. Spare parts, upgrades, and professional repairs. Call for laptop support.">
-<meta name="keywords" content="laptop service, laptop repair, laptop sales, spare parts, Dell service, HP service, ASUS service, Lenovo service, laptop maintenance, laptop upgrade">
-<meta name="author" content="U&I Technologies">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://U&I Technologies.netlify.app">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>U&I Technologies – Premium IT Services</title>
 
-<!-- Open Graph Tags -->
-<meta property="og:title" content="Laptop Service & Sales | U&I Technologies">
-<meta property="og:description" content="Professional laptop repair, service, and sales. Get your laptop fixed today with genuine spare parts.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://U&I Technologies.netlify.app">
-<meta property="og:image" content="https://via.placeholder.com/1200x630?text=U&I Technologies+Laptop+Service">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<!-- AOS Animation Library -->
+<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<!-- FontAwesome for Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="style.css">
-
-<!-- Schema.org Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "U&I Technologies",
-  "description": "Professional Laptop Service and Sales Center",
-  "url": "https://ui-techs.com/",
-  "telephone": "+919483676367",
-  "email": "karthikalkatte@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "IN",
-    "addressLocality": "Bangalore",
-    "addressRegion": "KA"
-  },
-  "priceRange": "₹5000 - ₹100000",
-  "areaServed": "Bangalore",
-  "sameAs": [
-    "https://www.facebook.com/U&I Technologies",
-    "https://www.instagram.com/U&I Technologies"
-  ]
-}
-</script>
-
-<!-- Google Analytics (Optional - add your tracking ID) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script> -->
 </head>
 <body>
 
-<!-- Header / Hero -->
-<header data-aos="fade-down">
-  <h1>U&I Technologies</h1>
-  <p>Laptop Sales • Services • Spare Parts</p>
-  <a href="#services" class="btn-primary">Explore Services</a>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">
+      <div class="logo-icon">U&I</div>
+      <div class="logo-text">U&I <span>Technologies</span></div>
+    </a>
+    
+    <button class="mobile-toggle" id="mobileToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="tel:+919606752864" class="nav-btn">
+        <i class="fas fa-phone"></i> Call Now
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home">
+  <div class="container hero-grid">
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Everything you need to <span>elevate your business</span></h1>
+      <p>Premium IT products, services, AMC and rentals for businesses and institutions across Bengaluru and Shivamogga.</p>
+      <a href="#about" class="btn">Explore Services</a>
+    </div>
+    <div class="hero-image" data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db" alt="IT Services">
+    </div>
+  </div>
 </header>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-box" data-aos="fade-up">
+      <h2 class="section-title"><span>Who We Are?</span></h2>
+      <p>U&I Technologies provides sales and services of business series new and refurbished laptops, desktops, IT products, accessories, and services to the public, businesses, institutions and government departments.</p>
+      <ul>
+        <li>Computer Sales and Service</li>
+        <li>Computer Rentals & AMC</li>
+        <li>Remote & On-site Support</li>
+        <li>Full Office Setup</li>
+      </ul>
+    </div>
+    <div class="about-box" data-aos="fade-left">
+      <h3>Trusted IT Partner</h3>
+      <p>We focus on reliability, transparency and long-term partnerships, ensuring your technology supports growth without disruption.</p>
+    </div>
+  </div>
+</section>
 
 <!-- Services Section -->
 <section id="services">
   <div class="container">
-    <h2 data-aos="fade-up">Our Services</h2>
-    <div class="cards">
-      <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <i class="fas fa-laptop"></i>
-        <h3>Laptop Sales</h3>
-        <p>We offer branded laptops with warranty and support. Get your perfect laptop today!</p>
+    <h2 class="section-title" data-aos="fade-up"><span>Our Services</span></h2>
+    <p class="section-sub" data-aos="fade-up">End-to-end IT solutions designed for performance, reliability and scale.</p>
+
+    <div class="services-grid">
+      <!-- Sales & Service -->
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <i class="fas fa-laptop"></i>
+            <h3>Sales & Service</h3>
+            <p>New and refurbished systems with expert support.</p>
+          </div>
+          <div class="service-card-back">
+            <h4>Included Services:</h4>
+            <ul>
+              <li>New laptops, desktops, and IT products</li>
+              <li>Refurbished computers</li>
+              <li>Accessories</li>
+              <li>Best-in-class pricing</li>
+              <li>Hardware replacement</li>
+              <li>Chip-level repair</li>
+              <li>Software installation</li>
+              <li>Operating system and MS Office</li>
+              <li>Remote solutions</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <i class="fas fa-tools"></i>
-        <h3>Repair & Service</h3>
-        <p>All laptop repairs, upgrades, and maintenance services at competitive prices.</p>
+
+      <!-- Computer AMC -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <i class="fas fa-tools"></i>
+            <h3>Computer AMC</h3>
+            <p>Affordable annual maintenance for worry-free IT.</p>
+          </div>
+          <div class="service-card-back">
+            <h4>Included Services:</h4>
+            <ul>
+              <li>Laptop maintenance</li>
+              <li>Desktop maintenance</li>
+              <li>Printer maintenance</li>
+              <li>Affordable cost</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="300">
-        <i class="fas fa-cogs"></i>
-        <h3>Spare Parts</h3>
-        <p>Genuine spare parts for all major laptop brands to keep your devices running smoothly.</p>
+
+      <!-- Rentals -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <i class="fas fa-server"></i>
+            <h3>Rentals</h3>
+            <p>Flexible laptop and desktop rental solutions.</p>
+          </div>
+          <div class="service-card-back">
+            <h4>Included Services:</h4>
+            <ul>
+              <li>Laptop rentals</li>
+              <li>Desktop rentals</li>
+              <li>Workstation rentals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spares -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <i class="fas fa-network-wired"></i>
+            <h3>Computer Spares</h3>
+            <p>All essential IT hardware parts.</p>
+          </div>
+          <div class="service-card-back">
+            <h4>Included Services:</h4>
+            <ul>
+              <li>Adapters</li>
+              <li>Screens</li>
+              <li>SMPS</li>
+              <li>Cables and converters</li>
+              <li>Monitors</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Products Section -->
-<section id="products" style="background:#f0f4f8;">
+<!-- Another Featured Laptops Section (or “Featured PCs”) -->
+<section id="featured-pcs">
   <div class="container">
-    <h2 data-aos="fade-up">Featured Laptops</h2>
+    <h2 class="section-title" data-aos="fade-up"><span>More Featured Laptops</span></h2>
+    <p class="section-sub" data-aos="fade-up">Check out other popular laptops we offer.</p>
+
     <div class="products-grid" data-aos="fade-up">
+      <!-- Laptop 1 -->
       <div class="product-card">
         <div class="product-image">
-          <img src="images/laptop1.jpg" alt="Laptop 1">
+          <img src="images/laptop1.jpg" alt="Dell XPS 13">
         </div>
         <h3>Dell XPS 13</h3>
         <p class="price">₹89,999</p>
@@ -105,9 +190,10 @@
         <button class="btn-interested" onclick="openModal(this)">Interested</button>
       </div>
 
+      <!-- Laptop 2 -->
       <div class="product-card">
         <div class="product-image">
-          <img src="images/laptop2.jpg" alt="Laptop 1">
+          <img src="images/laptop2.jpg" alt="HP Pavilion 15">
         </div>
         <h3>HP Pavilion 15</h3>
         <p class="price">₹54,999</p>
@@ -118,83 +204,89 @@
   </div>
 </section>
 
+
 <!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <h2 data-aos="fade-up">Contact Us</h2>
-    <form class="contact-form" action="https://formspree.io/f/xkoobrlj" method="POST" data-aos="fade-up" data-aos-delay="100">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-      <button type="submit">Send Message</button>
+<section class="contact" id="contact">
+  <div class="container contact-box" data-aos="zoom-in">
+    <h2 class="section-title"><span>Stay Connected</span></h2>
+    <p>📞 +91 9606752864<br>📧 uitechsup@gmail.com<br>🌐 www.ui-techs.com</p>
+
+    <!-- Contact Form -->
+    <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </div>
 </section>
 
-<!-- Modal for Product Interest -->
-<div id="interestModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Interested in this Laptop?</h2>
-    <form id="interestForm" action="https://formspree.io/f/xkoobrlj" method="POST">
-      <input type="hidden" name="type" value="laptop-interest">
-      <input type="hidden" id="laptopName" name="laptop_name" value="">
-      
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Your Phone Number" required>
-      <textarea name="message" placeholder="Additional Details (Optional)" rows="4"></textarea>
-      
-      <button type="submit" class="btn-submit">Submit Interest</button>
-    </form>
-  </div>
-</div>
 
-<!-- Footer -->
 <footer>
-  <p>© 2026 U&I Technologies. All Rights Reserved.</p>
+  © 2026 U&I Technologies. All Rights Reserved.
 </footer>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/YOURNUMBER" target="_blank" class="whatsapp-float">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- AOS Animation Script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration:1000,
-    once:true
+  // Initialize AOS animations
+  AOS.init({ 
+    once: true, 
+    duration: 1000,
+    offset: 100,
+    easing: 'ease-out-cubic'
   });
-
-  // Modal functions
-  function openModal(button) {
-    const laptopName = button.closest('.product-card').querySelector('h3').textContent;
-    document.getElementById('laptopName').value = laptopName;
-    document.getElementById('interestModal').style.display = 'block';
-  }
-
-  function closeModal() {
-    document.getElementById('interestModal').style.display = 'none';
-  }
-
-  window.onclick = function(event) {
-    const modal = document.getElementById('interestModal');
-    if (event.target === modal) {
-      modal.style.display = 'none';
+  
+  // Mobile menu toggle
+  const mobileToggle = document.getElementById('mobileToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  mobileToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    const icon = mobileToggle.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
     }
-  }
-
-  // Handle form submission
-  document.getElementById('interestForm').addEventListener('submit', function(e) {
-    setTimeout(() => {
-      alert('Thank you! We will contact you soon.');
-      closeModal();
-      document.getElementById('interestForm').reset();
-    }, 500);
+  });
+  
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      const icon = mobileToggle.querySelector('i');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    });
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80, // Offset for navbar
+          behavior: 'smooth'
+        });
+      }
+    });
   });
 </script>
-
 </body>
 </html>
