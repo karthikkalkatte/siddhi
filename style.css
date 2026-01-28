@@ -227,7 +227,8 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
-  align-items: center;
+  align-items: stretch;
+  justify-items: center;
 }
 
 .about-box {
@@ -235,6 +236,10 @@ section {
   padding: 60px;
   border-radius: 28px;
   box-shadow: 0 30px 70px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .about-box ul {
@@ -257,7 +262,28 @@ section {
 
 .about-box:nth-child(2) {
   padding: 60px 50px; /* increased padding inside */
-  margin-top: 30px; /* space from the previous box */
+  margin-top: 0; /* remove extra space for alignment */
+}
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+  .about-box {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .about-card {
+    align-items: center;
+    text-align: center;
+  }
+  .about-card-header {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .about-box:nth-child(2) h3 {
